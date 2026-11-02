@@ -1,0 +1,15 @@
+:root{--bg:#0a1622;--card:#122636;--ink:#e8f2f7;--mute:#93b4c4;--acc:#8fd8d2}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#1d4a5e 0%,var(--bg) 60%) fixed;color:var(--ink);font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif}
+header{text-align:center;padding:4.5rem 1rem 2.5rem}h1{font-size:clamp(2.4rem,7vw,4rem);letter-spacing:.4em;margin:.3em 0;font-weight:400;text-shadow:0 0 30px rgba(143,216,210,.25)}
+.sub{letter-spacing:.3em;color:var(--mute);font-size:.8rem;margin:0}.lead{color:var(--mute)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.4rem;max-width:1200px;margin:0 auto;padding:1rem 1.2rem 4rem}
+.card{all:unset;cursor:pointer;background:var(--card);border-radius:14px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.35);transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column}
+.card:hover,.card:focus-visible{transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,0,0,.5),0 0 0 1px var(--acc)}
+.card img{width:100%;aspect-ratio:1;object-fit:cover;display:block}.meta{padding:.9rem 1rem 1.1rem;display:flex;flex-direction:column;gap:.3rem}
+.t{font-size:1.05rem}.a{color:var(--acc);font-size:.85rem;letter-spacing:.1em}
+dialog{border:0;padding:0;background:#0e1e2b;color:var(--ink);border-radius:16px;max-width:min(960px,94vw);max-height:94vh;overflow:auto}
+dialog::backdrop{background:rgba(4,10,16,.85);backdrop-filter:blur(4px)}dialog img{width:100%;max-height:70vh;object-fit:contain;background:#000;display:block}
+.d{padding:1.2rem 1.5rem}.d h2{margin:0 0 .3rem;font-weight:400}.d p{line-height:1.9}
+.x{position:absolute;right:.6rem;top:.4rem;font-size:1.8rem}dialog button{background:none;border:0;color:var(--ink);cursor:pointer}
+dialog nav{display:flex;justify-content:space-between;padding:0 1rem 1rem}dialog nav button{font-size:2rem}
+footer{text-align:center;color:var(--mute);padding:2rem;font-size:.8rem;letter-spacing:.2em}
